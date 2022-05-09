@@ -1,16 +1,14 @@
 #server
+import helpers #helpers.py
+import asyncio
 import socket
 import random
-import asyncio
-import helpers
 
-HOST = '127.0.0.1'
-PORT = 35491
 sender = "SERVER"
 
 async def runServer():
     server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    server.bind((HOST, PORT))
+    server.bind((helpers.HOST, helpers.PORT))
     while(True):
         try:
             response = await helpers.getResponse(server, 5.0)

@@ -1,4 +1,5 @@
-import socket
+HOST = '127.0.0.1'
+PORT = 35491
 
 def sendMessage(sender, socketFrom, host_port, message):
     print(f'[{sender}] sent {message}....')
