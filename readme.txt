@@ -1,5 +1,5 @@
 run `python3 server.py`
 then `python3 client.py`
-watch the magic happen in the terminal
 
-note: I was practicing my async skills for this assignment. sorry if it's a mess.
+Watch the glorious ballet dance between a client/server.
+The server simulates UDP on localhost by randomly not sending a response. 
